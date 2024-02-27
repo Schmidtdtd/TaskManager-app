@@ -3,7 +3,7 @@
   }
   return nums;
 
-    return expect(moveZeroes([1, 2, 2, 3, 5]), [1, 2, 2, 3, 5]);
+    return expect(moveZeroes([1, 2]), [3, 5]);
   });
   test()
 
@@ -19,7 +19,15 @@ void main() {
   List<int> sequence;
 
   test('test 1', () {
-    array = [5, 1, 22, 25, 6, -1, 8, 10];
+    array = [1];
     sequence = [1, 6, -1, 10];
     expect(checkIsSubSequence(array, sequence), isTrue);
   });    
+
+
+    test('test 7', () {
+    array = [2];
+    sequence = [];
+    expect(checkIsSubSequence(array, sequence), isTrue);
+  });
+}
