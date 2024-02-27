@@ -12,3 +12,14 @@
       answer[sortedIndex] = array[start] * array[start];
       start += 1;
     }
+
+
+void main() {
+  List<int> array;
+  List<int> sequence;
+
+  test('test 1', () {
+    array = [5, 1, 22, 25, 6, -1, 8, 10];
+    sequence = [1, 6, -1, 10];
+    expect(checkIsSubSequence(array, sequence), isTrue);
+  });    
